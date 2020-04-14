@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".playActivity">
+
+    <ImageView
+
+        android:layout_gravity="left"
+        android:onClick="home"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/songimg"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/img7" />
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/titletxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotolightitalic"
+            android:gravity="center"
+            android:text="title here"
+            android:textColor="@color/textcolor2"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:onClick="playbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/playimg"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/playstyle1" />
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:id="@+id/playtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="play" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:onClick="timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/timer" />
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:id="@+id/timerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Timer" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:onClick="notepad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:src="@drawable/notepad" />
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Notepad" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

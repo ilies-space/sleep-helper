@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gardien_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+    <LinearLayout
+        android:id="@+id/topranked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:onClick="navbar"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/navbar" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/robotobolditalic"
+                android:text=""
+                android:textColor="@color/textcolor1"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:onClick="nighmood"
+                android:id="@+id/imageButton2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/darkmode" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView225"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotobolditalic"
+            android:text="editer choice"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/textcolor1"
+            android:textSize="20dp"/>
+
+
+
+            <ImageView
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="play"
+                android:id="@+id/roundedImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cover" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotobolditalic"
+        android:text="All songs"
+        android:gravity="center"
+        android:textColor="@color/textcolor1"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:id="@+id/scroolviewallsong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:onClick="song1"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img1" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView99"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Night Nature Sounds"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="Soft Crickets, Beautiful Piano, Deep Sleep Music"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/likes" />
+
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="28k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="song2"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView123"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img2" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Rain and Thunder Sounds"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="Fall Asleep Faster, Beat Insomnia"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/likes"/>
+
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="100k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="song7"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView124277623"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img7" />
+
+                    <ImageView
+                        android:id="@+id/imageView525763"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1237679"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Peaceful Piano and Soft Rain"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView2167372"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="Relaxing Sleep Music, A Bitter Rain"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/likes"/>
+
+
+                        <TextView
+                            android:id="@+id/textView2617275"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="117k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1122763"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="song3"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView1223"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img3" />
+
+                    <ImageView
+                        android:id="@+id/imageView53"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView129"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Rain on window"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView212"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="crackling fire and misty atmosphere for sleep"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/likes"/>
+
+
+                        <TextView
+                            android:id="@+id/textView215"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="9.5k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView113"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="song4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView12423"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img4" />
+
+                    <ImageView
+                        android:id="@+id/imageView573"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1279"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Ocean Waves"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView2172"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="Deep Sleep Music, Fall Asleep Fast"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/likes"/>
+
+
+                        <TextView
+                            android:id="@+id/textView2175"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="120k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1123"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="song5"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView124223"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img5" />
+
+                    <ImageView
+                        android:id="@+id/imageView5573"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12379"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Starship Sleeping Quarters"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView21372"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="Sleep Sounds White Noise with Deep Bass"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/likes"/>
+
+
+                        <TextView
+                            android:id="@+id/textView21275"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="60k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView11223"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:onClick="song6"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rectangle"
+                android:elevation="20dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView1242623"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/img6" />
+
+                    <ImageView
+                        android:id="@+id/imageView55763"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/playbtn" />
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="7dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView123679"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Farm Ambient Sounds With Birds"
+                        android:textColor="@color/textcolor1"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView216372"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotolightitalic"
+                        android:text="Cattle and Rain On A Barn Roof"
+                        android:textColor="@color/textcolor2"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_marginRight="8dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/likes"/>
+
+
+                        <TextView
+                            android:id="@+id/textView261275"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/robotobolditalic"
+                            android:text="1.3k"
+                            android:textColor="@color/textcolor1"
+                            android:textSize="15dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView112263"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    app:srcCompat="@drawable/emptyheart" />
+
+
+            </LinearLayout>
+
+            <TextView
+                
+                android:id="@+id/textViewx252"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotolightitalic"
+                android:layout_margin="30dp"
+                android:text="more songs will be added on the next update , Stay toned."
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/textcolor1"
+                android:textSize="17dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
