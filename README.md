@@ -3,7 +3,7 @@ sleep souns collection plus notepad android aplication
 
 # screen-shots
 
-![Screenshot](screenshots/thumbnail.png)
+![Screenshot](screenshots/thulbnail.png)
 
 
 ![Screenshot](screenshots/screenshot1.png)
