@@ -1,10 +1,10 @@
 # sleep-helper
-sleep souns collection plus notepad android aplication
+android lifestyle & productivity aplication containe
+sleep sound offline collection with timer and notepad free on play store.
 
 # screen-shots
 
 ![Screenshot](screenshots/thulbnail.png)
-
 
 ![Screenshot](screenshots/screenshot1.png)
 
